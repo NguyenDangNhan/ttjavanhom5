@@ -20,7 +20,7 @@ public class SimpleWebBrowser {
     public static void main(String[] args) {
         // TODO code application logic here
         // get the first URL
-        String initialPage = "http://metalab.unc.edu/javafaq/";
+        String initialPage = "https://www.w3schools.com/";
         if (args.length > 0) 
             initialPage = args[0];
         // set up the editor pane

@@ -28,7 +28,7 @@ public class ReadingHTMLDirectly {
         HTMLDocument doc = (HTMLDocument) htmlKit.createDefaultDocument( );
         jep.setEditorKit(htmlKit);
         try {
-            URL u = new URL("http://www.cafeaulait.org/");
+            URL u = new URL("https://www.w3schools.com/");
             InputStream in = u.openStream( );
             jep.read(in, doc);
         }
@@ -36,7 +36,7 @@ public class ReadingHTMLDirectly {
             System.err.println(e);
         }
         JScrollPane scrollPane = new JScrollPane(jep);
-        JFrame f = new JFrame("Cafe Aulait");
+        JFrame f = new JFrame("w3schools");
         f.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         f.setContentPane(scrollPane);
         f.setSize(512, 342);
